@@ -120,6 +120,8 @@ export function VideoPlayer({ src, title, videoId }: VideoPlayerProps) {
       <video
         ref={videoRef}
         controls
+        playsInline
+        muted
         controlsList="nodownload"
         onContextMenu={(e) => e.preventDefault()}
         preload="metadata"
