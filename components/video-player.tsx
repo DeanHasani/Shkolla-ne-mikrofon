@@ -132,20 +132,20 @@ export function VideoPlayer({ src, title, videoId }: VideoPlayerProps) {
         </p>
       </video>
 
-      {/* Center overlay play/pause icon — bottom-12 leaves native controls accessible */}
+      {/* Center overlay play/pause icon — hidden on mobile, visible on sm+ */}
       <button
         type="button"
         onClick={togglePlayPause}
         aria-label={isPlaying ? "Pause video" : "Play video"}
-        className={`pointer-events-auto absolute inset-x-0 top-0 bottom-12 flex items-center justify-center transition-opacity duration-300 ${
+        className={`pointer-events-none hidden sm:flex absolute inset-x-0 top-0 bottom-12 items-center justify-center transition-opacity duration-300 sm:pointer-events-auto ${
           showOverlay ? "opacity-100" : "opacity-0 group-hover:opacity-100"
         }`}
       >
-        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/80 text-primary-foreground shadow-lg backdrop-blur-sm transition-transform hover:scale-110 sm:h-20 sm:w-20">
+        <span className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/80 text-primary-foreground shadow-lg backdrop-blur-sm transition-transform hover:scale-110">
           {isPlaying ? (
-            <Pause className="h-7 w-7 sm:h-9 sm:w-9" />
+            <Pause className="h-9 w-9" />
           ) : (
-            <Play className="h-7 w-7 sm:h-9 sm:w-9" />
+            <Play className="h-9 w-9" />
           )}
         </span>
       </button>
