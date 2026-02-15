@@ -1,4 +1,3 @@
-
 export interface Video {
   id: string
   title: string
@@ -23,7 +22,7 @@ export const videos: Video[] = [
       "Hyrja e podcastit: Njihuni me ne",
     duration: "0:41",
     durationSeconds: 41,
-    url: "https://pub-e8fcef5b0e6f4cd7bd1c7f53702aa5c2.r2.dev/Njihuni%20me%20ne.mp4",
+    url: "qvYQbf5BjzQ",
     thumbnail: "/thumbnails/njmnthumbnail.jpg",
     order: 1,
     series: {
@@ -39,7 +38,7 @@ export const videos: Video[] = [
       "Një mësues ndikon përjetë; asnjëherë nuk e di se ku ndalet ndikimi i tij. Fjalët e profesor Latifit janë për ne, për ju, për të gjithë ata që besojnë në fuqinë e arsimit Në 6 pyetje, si vetëm ai di të përgjigjet. Na ndiqni!",
     duration: "23:50",
     durationSeconds: 1430,
-    url: "https://pub-e8fcef5b0e6f4cd7bd1c7f53702aa5c2.r2.dev/INTERVISTA%20ME%20PROFESOR%20LATIF%20COCOLIN.mp4",
+    url: "E__QIXELLYc",
     thumbnail: "/thumbnails/intvthumbnail.jpg",
     order: 2,
     series: {
@@ -55,7 +54,7 @@ export const videos: Video[] = [
       "Ky podcast flet për perfeksionizmin dhe presionin për të qenë gjithmonë perfektë. Ne tregojmë pse guximi për të qenë vetvetja është më i fortë se çdo përsosmëri.",
     duration: "5:23",
     durationSeconds: 323,
-    url: "https://pub-e8fcef5b0e6f4cd7bd1c7f53702aa5c2.r2.dev/Perfeksionizmi.mp4",
+    url: "16eZfHkR0Fw",
     thumbnail: "/thumbnails/pfkthumbnail.jpg",
     order: 3,
     series: {
@@ -71,7 +70,7 @@ export const videos: Video[] = [
       "Është një rrëfim ku gjithsecili do të gjejë veten, mes kujtimeve, dashurisë dhe mësimeve që na kanë lënë gjyshërit.",
     duration: "8:22",
     durationSeconds: 502,
-    url: "https://pub-e8fcef5b0e6f4cd7bd1c7f53702aa5c2.r2.dev/Gjysherit.mp4",
+    url: "nVODi3g2s0E",
     thumbnail: "/thumbnails/gjshthumbnail.jpg",
     order: 4,
     series: {
@@ -87,7 +86,7 @@ export const videos: Video[] = [
       "Festojmë së bashku me nxënësit e fillores festat e fundvitit, me gëzim, buzëqeshje dhe atmosferë të ngrohtë festive. Na ndiqni në dy episode magjepsëse me fëmijët e ciklit fillor!",
     duration: "14:37",
     durationSeconds: 877,
-    url: "https://pub-e8fcef5b0e6f4cd7bd1c7f53702aa5c2.r2.dev/Festojme%20se%20bashku.mp4",
+    url: "lnTtVjEJMLI",
     thumbnail: "/thumbnails/fsbthumbnail.jpg",
     order: 5,
     series: {
@@ -96,7 +95,6 @@ export const videos: Video[] = [
       totalParts: 5,
     },
   },
-
 ]
 
 export function getVideoById(id: string): Video | undefined {
